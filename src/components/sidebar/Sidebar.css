@@ -1,0 +1,132 @@
+.logo {
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 70px;
+}
+
+.logo .logo-name img {
+  height: 27px !important;
+  margin-right: 5px;
+  padding-bottom: 2px;
+}
+
+.logo img:last-child {
+  height: 16px;
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #2a3042;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.sidebar .vertical-menu {
+  overflow: auto;
+  height: calc(100% - 100px);
+}
+
+.sidebar:hover .vertical-menu::-webkit-scrollbar-thumb {
+  display: inline;
+}
+
+.sidebar .vertical-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar .vertical-menu::-webkit-scrollbar-thumb {
+  display: none;
+  background: #74788d;
+  border-radius: 10px;
+}
+
+.sidebar .vertical-menu ul {
+  padding: 0;
+}
+
+.logo-name {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+
+.sidebar .vertical-menu ul li {
+  list-style-type: none;
+  padding: 12px 22px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.sidebar .vertical-menu ul li a:hover .icon-container {
+  color: white;
+  animation: shake 0.72s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+.sidebar .vertical-menu ul li a .icon-container {
+  height: 22px;
+  width: 22px;
+  margin-right: 8px;
+  padding-top: 2.5px;
+}
+
+.sidebar .vertical-menu ul li a span {
+  height: 22px;
+  width: 22px;
+  margin-right: 8px;
+  margin-left: 8px;
+  padding-bottom: 10px;
+}
+
+.sidebar .vertical-menu ul li a {
+  color: #a6b0cf;
+  transition: all 0.4s;
+}
+
+.sidebar .vertical-menu ul li:hover span {
+  color: white;
+}
+
+.sidebar .vertical-menu ul li .menu-title {
+  color: #6a7187 !important;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  cursor: default;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.color-focus {
+  background-color: #a6b0cf1f;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
